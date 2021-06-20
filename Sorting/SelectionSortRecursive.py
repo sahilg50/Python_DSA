@@ -41,6 +41,7 @@ def main():
     except ValueError:
         print(array)
 
+    # Create an object and run the method selection sort Recurcive
     if(len(array) != 0):
         sort = SelectionSort(array=array)
         sort.selectionSortRecurcive()
