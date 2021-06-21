@@ -9,11 +9,13 @@ def insertionSort(array):
         return
 
     for i in range(1, length):
-        a = i
-        while(a >= 1):
-            if(array[a-1] > array[a]):
-                array[a], array[a-1] = array[a-1], array[a]
+
+        key = array[i]
+        a = i-1
+        while(a >= 0 and key < array[a]):
+            array[a+1] = array[a]
             a -= 1
+        array[a+1] = key
 
     return array
 

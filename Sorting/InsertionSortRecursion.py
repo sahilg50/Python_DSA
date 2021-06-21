@@ -15,11 +15,14 @@ class InsertionSort:
         if i == self.length:
             return
 
-        a = i
-        while(a >= 1):
-            if (self.array[a-1] > self.array[a]):
-                self.array[a-1], self.array[a] = self.array[a], self.array[a-1]
+        key = self.array[i]
+        a = i-1
+
+        while(a >= 0 and key < self.array[a]):
+            self.array[a+1] = self.array[a]
             a -= 1
+
+        self.array[a+1] = key
 
         self.insertionSortRecursive(i=i+1)
 
