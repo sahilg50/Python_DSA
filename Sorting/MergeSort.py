@@ -1,6 +1,18 @@
 # Merge Sort
 
 class MergeSort:
+    """
+     MergeSort:
+          function:
+              bubbleSortRecursive : recursive
+                  function to sort array
+              __str__ : format print of array
+              __init__ : constructor
+                  function in python
+          variables:
+              self.array = contains array
+              self.length = length of array
+    """
 
     def __init__(self, array):
         self.array = array
