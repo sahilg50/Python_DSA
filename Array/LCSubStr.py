@@ -56,7 +56,8 @@ class Strings():
 
 def main():
 
-    print(LCSubStr_iterative())
+    strings = Strings()
+    print(strings.LCSubStr_recurive())
 
 
 if __name__ == '__main__':
