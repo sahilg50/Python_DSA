@@ -1,0 +1,1 @@
+LCSubStr(X=str1, Y=str2, m=len(str1), n=len(str2))
