@@ -17,9 +17,10 @@ class MergeSort:
     def __init__(self, array):
         self.array = array
         self.length = len(array)
+        self.counter = 0
 
     def __str__(self):
-        return " ".join([str(item) for item in self.array])
+        return str(self.counter)
 
     def MergeSortRecursion(self, array=None):
 
@@ -52,6 +53,7 @@ class MergeSort:
                     array[k] = R[j]
                     j += 1
                 k += 1
+                self.counter += 1
 
             # Checking and Coping the remaining variables.
             while i < len(L):
